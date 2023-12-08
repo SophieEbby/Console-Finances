@@ -138,5 +138,25 @@ console.log("---------------------------")
 var totalMonths = finances.length;
 console.log(`Total Months: ${totalMonths}`) // print in console the total months
 
+//Variables
+var totalMoney = 0;
+
+//for loop
+for (var i = 0; i < totalMonths; i++) {
+  //variables for calculating the total 
+  var current = finances[i];
+  var currentMonth = current[0];
+  var currentProfit = current[1];
+  //console.log(`Current Month: ${currentMonth}`)
+  //console.log(`Current Profit: ${currentProfit}`)
+
+  //Calculate the total
+  totalMoney += currentProfit;
+  //console.log(`Total: ${totalMoney}`)
+
+}
+
+console.log(`Total: $${totalMoney}`) // print in console the total month
+
 
 
