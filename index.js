@@ -129,6 +129,14 @@ var finances = [
 // current data point
 // previous data point
 
+//-------------------------------Code--------------------------------------------
+
+console.log("Financial Analysis")
+console.log("---------------------------")
+
+//Total Months
+var totalMonths = finances.length;
+console.log(`Total Months: ${totalMonths}`) // print in console the total months
 
 
 
