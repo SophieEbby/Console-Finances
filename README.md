@@ -13,7 +13,7 @@ To access the results follow these steps:
 3. Navigate to "Console" in the Inspect bar.
 4. The finanical analysis results should be shown as below:
 
-![Screenshot of finanical analysis results]()
+![Screenshot of finanical analysis results](https://github.com/SophieEbby/Console-Finances/blob/main/assets/Finanical-Analysis-Screenshot.png)
 
 URL: https://sophieebby.github.io/Console-Finances/
 
