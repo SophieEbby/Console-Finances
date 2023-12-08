@@ -140,6 +140,9 @@ console.log(`Total Months: ${totalMonths}`) // print in console the total months
 
 //Variables
 var totalMoney = 0;
+var totalChange = 0;
+var previousProfit;
+
 
 //for loop
 for (var i = 0; i < totalMonths; i++) {
@@ -154,9 +157,20 @@ for (var i = 0; i < totalMonths; i++) {
   totalMoney += currentProfit;
   //console.log(`Total: ${totalMoney}`)
 
+  //if statement to calculate average change, greatest increase & decrease
+  if (i > 0) {
+    var change = currentProfit - previousProfit;
+    totalChange += change; //caluclating the total change to be used in the average change calculation
+  }
+  previousProfit = currentProfit; // setting the previousprofit variable with the current
 }
 
+var averageChange = totalChange / (totalMonths - 1); //calculating the average change
+averageChange = averageChange.toFixed(2); //setting the average change to 2 decimal places
+
 console.log(`Total: $${totalMoney}`) // print in console the total month
+console.log(`Average Change: ${averageChange}`); // print in console the average change
+
 
 
 
